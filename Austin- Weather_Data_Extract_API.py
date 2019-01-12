@@ -86,8 +86,10 @@ for item in periods_data_json:
     weather_data = pd.DataFrame({'Date':item['startTime'],'Temperature':item['temperature'],
                                  'Unit':item['temperatureUnit'],'WindDir':item['windDirection'], 'Windspeed':item['windSpeed']},
                                 index =[0])
-
+    weather_data['Location']= 'Austin'
     Austin_weather = pd.concat([Austin_weather, weather_data])
-weather_dataframe['Location']= 'Austin'
-weather_dataframe
+    
+print(Austin_weather)
+
+
 
