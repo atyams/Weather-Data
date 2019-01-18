@@ -64,7 +64,7 @@ print(data)
 
 
 #Step-6
-# Parse JSON- Covert the string data into JSON 
+# Parse JSON- Load the Json data and analyze the details 
 data_json =json.loads(data)
 print(data_json)
 
